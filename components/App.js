@@ -21,18 +21,18 @@ var contacts = [
 ];
 
 var contactForm = {
-  firstName: '',
-  lastName: '',
-  email: ''
+	firstName: '',
+	lastName: '',
+	email: ''
 };
 
 var App = React.createClass({
-  render: function() {
-    return (
-      <div className={'app'}>
-        <ContactForm contact={contactForm}></ContactForm>
-        <Contacts items = {contacts}></Contacts>
-      </div>
-    )
-  }
+	render: function() {
+		return (
+			<div className={'app'}>
+			<ContactForm contact={contactForm}></ContactForm>
+			<Contacts items = {contacts}></Contacts>
+			</div>
+		)
+	}
 });
